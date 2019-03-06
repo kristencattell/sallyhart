@@ -1,0 +1,84 @@
+/* the body tag contains everything on the page */
+
+body {
+  font-family:  Cooper Hewitt;
+  font-size: 16px;
+  background-color: #004d9d;
+  color: #ffffff;
+}
+
+  /*change link colors*/
+a {
+  color: #ffffff;
+  /*this removes the default underline */
+  text-decoration: none;
+}
+
+section { 
+  /* vh stands for view port height, which will be relative to size of browser window*/
+ height: 100vh;
+ background-image: url(sally_1.jpg);
+  /* our background image will cover the full width and height of section without skewing or repeating*/
+ background-size: cover;
+  /* this will fix the background to the browser viewport rather than to the section, creating reveal effect as we scroll*/
+  background-attachment: fixed;
+}
+
+header {
+  /* using fixed postion allows us to precisely position an element in relation to the browser viewport */ 
+  position: fixed;
+  top: 20px;
+  left:  20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight:   bold;
+  /* margins are the go to property when we want to create space between elements */
+  margin-bottom: 5px;
+}
+
+/* this will select the a tags in footer */
+footer a {
+  margin-right: 5px;
+}
+
+/* we can apply styles to elements based on whether we are overing over them, this is called a pseudo selector */
+a:hover {
+  color: #dddddd;
+}
+
+/*this will apply styles to our html which ahs a "class" attribute of "image_2" */
+.image_2 {
+  background-image: url(sally_2.jpg);
+}
+
+.image_3 {
+  background-image: url(sally_3.jpg);
+}
+
+.image_4 {
+  background-image: url(sally_4.jpg);
+}
+
+.image_5 {
+  background-image: url(sally_5.jpg);
+}
+
+.image_6 {
+  background-image: url(sally_6.jpg);
+}
+
+.image_7 {
+  background-image: url(sally_7.jpg);
+}
+
+.image_8 {
+  background-image: url(sally_8.jpg);
+}
